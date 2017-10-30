@@ -14,17 +14,22 @@ class App extends React.Component {
         {id: 4, quantity: 1, description: "iced coffee"}
       ]
     }
+
+    this.addItem = this.addItem.bind(this);
   }
 
-  addItem() {
-    
+  addItem(item) { 
+    this.setState({
+      list: this.state.list.concat(item)
+    });
+
   }
 
   
   render () {
     return (
       <div>
-       <AddGrocery />
+       <AddGrocery addItem={this.addItem} />
         <GroceryList groceries={this.state.list} />
       </div>
     )
