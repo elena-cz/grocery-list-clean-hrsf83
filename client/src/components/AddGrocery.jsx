@@ -8,7 +8,19 @@ class AddGrocery extends React.Component {
   }
 
   render () {
-    return null;
+    return (
+      <div>
+        <div className="formFields">
+          <label>Item</label>
+          <input type="text" name="description" />
+          <label>Quantity</label>
+          <input type="text" name="quantity" />
+          <button type="submit">Add</button>
+        </div>
+        <div className="formFields">
+        </div>
+      </div>
+    );
   }
 }
 

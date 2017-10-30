@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: honeydew;
   color: seagreen;
 }
@@ -12,4 +12,28 @@ body {
 
 .groceries {
   margin: 10px;
+}
+
+.formFields {
+  margin: 5px;
+}
+
+.formFields label {
+  margin: 0 10px;
+}
+
+.formFields input {
+  height: 20px;
+  border: 1px solid seagreen;
+}
+
+.formFields input[name=quantity] {
+  width: 30px;
+}
+
+button {
+  background-color: seagreen;
+  color: honeydew;
+  border: none;
+  margin: 0 10px;
 }
